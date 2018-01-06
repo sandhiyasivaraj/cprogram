@@ -25,14 +25,10 @@ for(i=0;i<l;i++)
 int main(void) 
 {  
 int n,i,j,a[n],n1,b[n1],l,c[l],result1,result2; 
-printf("ENTER THE SIZE OF FIRST ARRAY\n");
 scanf("%d",&n);
-printf("ENTER THE ELEMENTS IN FIRST ARRAY\n");
 for(i=0;i<n;i++) 
 scanf("%d",&a[i]);
-printf("ENTER THE SIZE OF SECOND ARRAY\n");
 scanf("%d",&n1);
-printf("ENTER THE ELEMENTS IN SECOND ARRAY\n");
 for(i=0;i<n1;i++) 
 scanf("%d",&b[i]);
 for(i=0;i<n1;i++)
