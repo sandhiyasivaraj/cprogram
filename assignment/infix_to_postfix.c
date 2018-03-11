@@ -53,7 +53,7 @@ char pop()
 	else
 		return 0;
 
-printf("ENTER THE INFIX EXPRESSION2222\n");
+
 	   
 	}
 
