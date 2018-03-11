@@ -24,6 +24,7 @@ int getprecedence(char ch)
 		    case '/':value=2;break;
 		    default :value=5;break;
 		}
+	return value;
         }
 
 //puch function
@@ -42,19 +43,19 @@ char pop()
 	    n *temp=top;
 	    if(top!=NULL)
 	    top=top->next;
-	    return(top->data);
+	    return(temp->data);
 	}
 
 
 int main(void)
 	{
-	   int i,j=0;
+	   int i;
 	   char input[15],k;
-	   printf("ENTER THE INFIX EXPRESSION");
+	   printf("ENTER THE INFIX EXPRESSION\n");
 	   scanf("%s",input);
 for(i=0;i<strlen(input);i++)
 	{
-	  if(i!='+'&&i!='-'&&i!='*'&&i!='/')
+	  if(input[i]!='+'&&input[i]!='-'&&input[i]!='*'&&input[i]!='/')
 	     {
 		output[j]=input[i];
 		j++;
@@ -87,5 +88,4 @@ while(k=pop())
 	  j++;
 	}
  printf("%s",output);
-return 0;
 }
