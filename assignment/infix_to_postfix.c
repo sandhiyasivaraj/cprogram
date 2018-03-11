@@ -12,6 +12,7 @@ char output[15];
 int j=0;
 
 
+
 //precedence function
 int getprecedence(char ch)
 	{
@@ -40,10 +41,20 @@ void push(char ch)
 //pop function
 char pop()
 	{
-	    n *temp=top;
-	    if(top!=NULL)
-	    top=top->next;
-	    return(temp->data);
+	
+	n *temp;
+	temp=top;
+        if(top!=NULL)
+	{
+		top=top->next;
+		return(temp->data);
+        	
+	}
+	else
+		return 0;
+
+printf("ENTER THE INFIX EXPRESSION2222\n");
+	   
 	}
 
 
