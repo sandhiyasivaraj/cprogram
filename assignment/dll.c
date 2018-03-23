@@ -91,7 +91,6 @@ void insertbefore()
 			temp=temp->next;
 		}
 		cur=temp->prev;
-		printf("%d",cur->data);
 		cur->next=newnode;
 		newnode->next=temp;
 		newnode->prev=cur;
